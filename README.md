@@ -1,5 +1,7 @@
 # Django-E-commerce
 
+### Database Structure
+![E-Com_DB](https://user-images.githubusercontent.com/108905313/189901922-e877a4a1-0b22-4ac4-82c1-c70d0ed47a6f.jpeg)
 The first thing to do is to clone the repository:
 ```sh
 $ git clone https://github.com/SoftCysec/Django-E-commerce.git
