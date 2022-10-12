@@ -75,8 +75,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = 
-{
+DATABASES = {
       'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
@@ -132,7 +131,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
-STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'staticfiles')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 # Default primary key field type
