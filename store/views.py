@@ -1,11 +1,10 @@
 import datetime
-from itertools import product
 from django.shortcuts import render, redirect
 from .models import *
 from django.http import JsonResponse
 import json
 from django.contrib.auth.forms import UserCreationForm
-#from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def register(request):
@@ -94,7 +93,7 @@ def updateItem(request):
         
     return JsonResponse('Item was added', safe=False)
 
-#@csrf_exempt
+@csrf_exempt
 def processOrder(request):
     transaction_id = datetime.datetime.now().timestamp()
     data = json.loads(request.body)
